@@ -1,0 +1,26 @@
+{
+  "name": "project-8",
+  "version": "1.0.0",
+  "description": "A simple character editor for project/8 RPG",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies" :
+    { "hapi" : "13.3.0"
+    , "couchbase" : "2.1.3"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djodjo3/project-8.git"
+  },
+  "keywords": [
+    "RPG"
+  ],
+  "author": "djodjo3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djodjo3/project-8/issues"
+  },
+  "homepage": "https://github.com/djodjo3/project-8#readme"
+}
