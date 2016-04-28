@@ -1,9 +1,11 @@
 # project-8
 
-urrent project status
+Current project status
 
 The CI builds are hosted on the [Travis][travis] infrastructure.
 
 | Branches   |                  Linux                   |
 | :--------- | :--------------------------------------: |
 | _master_   | [![master status][master-badge]][travis] |
+
+ [travis]: https://travis-ci.org/djodjo3/project-8.svg?branch=master
