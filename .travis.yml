@@ -10,5 +10,5 @@ services:
 
 before_install:
 - docker pull couchbase/server:4.5.0-DP1
-- docker run -d -p 8091-8093:8091-8093 couchbase/server:4.5.0-DP1 --name couchbase
+- docker run -d --name couchbase -p 8091-8093:8091-8093 couchbase/server:4.5.0-DP1
 - docker ps -a 
