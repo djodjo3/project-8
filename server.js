@@ -4,6 +4,9 @@ const Hapi = require('hapi');
 const Good = require('good');
 const server = new Hapi.Server();
 const couchbase = require('couchbase');
+const inert = require('inert');
+
+//const materialize = require('materialize-css');
 
 var config = require('./config.json');
 var datas = require('./model.json');
@@ -18,7 +21,7 @@ server.connection({
 });
 
 
-server.register(require('vision'), (err) => {
+server.register([require('vision'), require('inert')], (err) => {
 
     if (err) {
         throw err;
@@ -34,9 +37,57 @@ server.route({
 
 server.route({
     method: 'GET',
+    path: '/css/materialize.min.css',
+    handler: {
+        file: 'public/css/materialize.min.css'
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/js/materialize.min.js',
+    handler: {
+        file: 'public/js/materialize.min.js'
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/fonts/roboto/Roboto-Regular.woff2',
+    handler: {
+        file: 'public/fonts/Roboto-Regular.woff2'
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/fonts/roboto/Roboto-Light.woff2',
+    handler: {
+        file: 'public/fonts/Roboto-Light.woff2'
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/fonts/roboto/Roboto-Ligth.woff',
+    handler: {
+        file: 'public/fonts/Roboto-Light.woff'
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/fonts/roboto/Roboto-Ligth.ttf',
+    handler: {
+        file: 'public/fonts/Roboto-Light.ttf'
+    }
+});
+
+server.route({
+    method: 'GET',
     path: '/favicon.ico',
-    handler: function(request, reply) {
-        reply().code(200).type('image/x-icon');
+    handler: {
+        file: 'public/favicon.ico'
     }
 });
 
