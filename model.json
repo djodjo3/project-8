@@ -1,6 +1,8 @@
 {
 	"Historiques":[
 		{"Nom": "Médic",
+		"Tagline" : "On a tous besoin d'être sauvé",
+		"Image" : "http://vignette3.wikia.nocookie.net/nalsdatapedia/images/b/b7/CyberMedic.jpg/revision/latest?cb=20121117064400",
 		"Compétences": [
 			"Médecine","Académie"
 		],
@@ -9,6 +11,8 @@
 			"tototo"
 		]},
 		{"Nom":"Solo",
+		"Tagline" : "Tuer n'est pas jouer",
+		"Image": "https://s-media-cache-ak0.pinimg.com/236x/59/60/28/596028d52c7b353d6710951cc1c68683.jpg",
 		"Compétences": [
 			"titi","toto"
 		]}
