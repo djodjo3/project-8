@@ -6,39 +6,49 @@ const server = new Hapi.Server();
 const couchbase = require('couchbase');
 
 var config = require('./config.json');
-var datas = require('./model.json')
+var datas = require('./model.json');
+
 var myCluster = new couchbase.Cluster("couchbase://config.couchbase.host");
 var Bucket8 = myCluster.openBucket('default');
 
 
-server.connection({ port: 3000 });
+server.connection({
+    host: config.app.host,
+    port: config.app.port
+});
 
-server.register(require('inert'), (err) => {
+
+server.register(require('vision'), (err) => {
 
     if (err) {
         throw err;
     }
 
-    server.route({
-        method: 'GET',
-        path: '/',
-        handler: function (request, reply) {
-            reply.file('./routes/hello.html');
-        }
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+        reply.view('index',datas);
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/favicon.ico',
+    handler: function(request, reply) {
+        reply().code(200).type('image/x-icon');
+    }
+});
+
+
+ server.views({
+        engines: {
+            js: require('handlebars')
+        },
+        relativeTo: __dirname,
+        path: 'templates'
     });
 
-    server.route({
-        method: 'GET',
-        path: '/favicon.ico',
-        config: {
-            cache: {
-                expiresIn: 1000 * 60 * 60 * 24 * 21
-            }
-        },
-            handler: function(request, reply) {
-                reply.file('./routes/favicon.ico');
-                }
-            });
 });
 
 server.register({
@@ -49,7 +59,7 @@ server.register({
             events: {
                 response: '*',
                 log: '*',
-		ops: '*'
+        ops: '*'
             }
         }]
     }
@@ -64,6 +74,7 @@ server.register({
         if (err) {
            throw err;
         }
+        server.log('info', "Starting project/8 application...")
         server.log('info', 'Server running at: ' + server.info.uri);
         server.log('info', 'Couchbase server configured on ' + config.couchbase.host + ' at port ' + config.couchbase.port);
 

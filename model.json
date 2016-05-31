@@ -1,0 +1,18 @@
+{
+	"Historiques":[
+		{"Nom": "Médic",
+		"Compétences": [
+			"Médecine","Académie"
+		],
+		"Prouesses": [
+			"blablabla",
+			"tototo"
+		]},
+		{"Nom":"Solo",
+		"Compétences": [
+			"titi","toto"
+		]}
+	],
+	"title": "Here is my title",
+	"body": "Your body, my body"
+}
