@@ -1,4 +1,41 @@
 {
+	"Competences":[
+	{
+		"Nom":"Astrogation",
+		"Description" : "Cette capacité renvoie à la capacité d’un personnage à savoir piloter des vaisseaux astraux, qu’ils soient atmosphériques ou non. Cette compétence renvoie aussi au fait que le ou les pilotes sont connectés au système de bord du vaisseau. Aussi, Astrogation permet de lire une carte Astrale, de s’orienter grâce à celle-ci, de planifier des routes de voyage mais aussi la connaissance générale du personnage de ce qui est ou n’est pas sur les cartes. Cela pourrait par exemple permettre de semer des adversaires en composant une route inhabituelle, de se cacher dans un champ d’astéroïdes tout proche, ou encore d’effectuer des réparations dans un Port d’Ombre.Enfin, Astrogation montre la connaissance du personnage des systèmes d’astrogation eux-mêmes, de leur mode de fonctionnement et de leur utilisation optimale. Si la compétence Astrogation permet difficilement de pourvoir à un problème mécanique du système, cela peut malgré tout permettre d’améliorer un système existant, de corriger ses défauts, ou encore de réparer des erreurs (intentionnelles ou non).",
+		"Icone" : "stars"
+	},
+	{
+		"Nom":"Athlétisme",
+		"Description": "L’Athlétisme représente la condition physique générale de votre personnage. Cette condition physique peut être obtenue par entrainement, don naturel ou encore des altérations biologiques ou cybernétiques. C’est vraiment la facilité avec le personnage déplace son corps.  C’est donc une compétence physique qui conviendra particulièrement à des scénarii et des personnages d’action. Athlétisme peut être utilisé pour surmonter des obstacles (en sautant, courant, escaladant, nageant..). On utilise aussi athlétisme dans des courses poursuites à pied. On peut utiliser athlétisme pour créer un Avantage en sautant pour prendre de la hauteur, en courant plus vite que son adversaire ne peut le faire, ou encore en effectuant d’éblouissantes acrobaties qui perturbent les adversaires. Athlétisme est aussi la compétence de base pour se défendre lors de conflits physiques, que ce soit des attaques au corps à corps ou à distance.",
+		"Icone":"rowing"	
+	},
+	{
+		"Nom":"Bagarre",
+		"Description": "Cette compétence renvoie à la capacité d’un personnage à faire usage de ses poings (et de ses pieds) afin d’attaquer ou de se défendre, mais aussi d’utiliser des armes de mêlée (épée, Forge Lame ou autre. Cela regroupe toutes les techniques de combat connues dans la galaxie, que ce soit à mains nues ou liés au maniement des armes. On peut utiliser cette compétence afin d’avoir un Avantage pour intimider quelqu’un (en faisant une démonstration de sa technique par exemple). Ou encore de découvrir la technique utilisée par son adversaire afin d’utilisée la technique appropriée pour le contrer plus facilement. Cela englobe aussi la reconnaissance de ces armes, l’estimation, voir si une lame est tranchante ou effilée, équilibrée ou non, la valeur des ornementations, etc..",
+		"Icone":"new_releases"
+	},
+	{
+		"Nom":"Conduite",
+		"Description":"La compétence de conduite comprend tout ce qui est relatif à la conduite manuelle d’un véhicule, qu’il ait des roues, des ailes, des chenilles ou autre. Et lorsqu’on parle de conduite, on parle forcément de courses et de courses poursuite, qui seront développées plus loin dans ce livre, tout comme les véhicules et leur gestion en général.",
+		"Icone":"motorcycle"
+	},
+	{
+		"Nom":"Ingénierie",
+		"Description":"",
+		"Icone":"build"
+	},
+	{	
+		"Nom":"Intrusion",
+		"Description":"La compétence d'Intrusion couvre la capacité d’un personnage à se mouvoir discrètement, sans être remarqué. On peut donc se servir d'Intrusion afin de s’infiltrer dans un bâtiment ou passer outre les dispositifs de sécurité des gardes, mais aussi pour détecter ces mêmes équipements de sécurité, ou encore les désactiver au besoin.",
+		"Icone":"lock_open"
+	},
+	{
+		"Nom": "Tir",
+		"Description" : "Tir qualifie la facilité et la précision avec laquelle un personnage se sert d’armes de point, d’épaule ou d’artillerie, qu’elles soient magnétiques ou autres. Cette capacité sert aussi bien à tirer qu’à entretenir ces armes, à en évaluer leur valeur, leurs spécificités ou même à savoir comment les améliorer. Il y a de nombreuses manières de créer des Avantages en tirant, que ce soit en obligeant l’adversaire à se cacher à cause d’un feu nourri, des tirs surprises, et ainsi de suite. On peut aussi, si on en a la possibilité, se servir de cette compétence pour saboter les armes des adversaires par exemple (faire qu’elle s’enraille, etc..).",
+		"Icone": "my_location"
+	}
+	],
 	"Historiques":[
 		{"Nom": "Médic",
 		"Tagline" : "On a tous besoin d'être sauvé",
@@ -16,7 +53,5 @@
 		"Compétences": [
 			"titi","toto"
 		]}
-	],
-	"title": "Here is my title",
-	"body": "Your body, my body"
+	]
 }

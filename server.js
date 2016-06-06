@@ -37,6 +37,22 @@ server.route({
 
 server.route({
     method: 'GET',
+    path: '/competences.html',
+    handler: function (request, reply) {
+        reply.view('competences',datas);
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/regles.html',
+    handler: function (request, reply) {
+        reply.view('regles',datas);
+    }
+});
+
+server.route({
+    method: 'GET',
     path: '/css/materialize.min.css',
     handler: {
         file: 'public/css/materialize.min.css'
