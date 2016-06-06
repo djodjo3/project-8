@@ -21,10 +21,10 @@
     <div class="nav-wrapper green">
       <a href="#!" class="project-8-logo">Project/8</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="recherche.html"><i class="material-icons">search</i></a></li>
-        <li><a href="personnage.html"><i class="material-icons">perm_identity</i></a></li>
+        <li><a href="competences.html"><i class="material-icons">view_list</i></a></li>
+        <li><a href="personnages.html"><i class="material-icons">contacts</i></a></li>
         <li><a href="creation.html"><i class="material-icons">note_add</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        <li><a href="regles.html"><i class="material-icons">settings</i></a></li>
       </ul>
     </div>
   </nav>
@@ -40,26 +40,11 @@
           3-columns-wide on large screens,
           4-columns-wide on medium screens,
           12-columns-wide on small screens  -->
-
+          &nbs;
       </div>
 
       <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
 
-
-    <ul class="collection with-header">
-        <li class="collection-header"><h4>Historiques</h4></li>
-          	{{#each Historiques}}
-        <li class="collection-item"><div>{{this.Nom}}<a href="#!" class="secondary-content"><i class="material-icons">visibility
-</i></a></div></li>
-     		 {{/each}}
-     </ul>
-            
-        <!-- Teal page content
-
-              This content will be:
-          9-columns-wide on large screens,
-          8-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
 	{{#each Historiques}}
 
 	 <div class="card small">
